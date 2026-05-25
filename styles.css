@@ -304,15 +304,6 @@ h3 {
   padding: 12px;
 }
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 28px clamp(18px, 5vw, 64px);
-  color: #ffffff;
-  background: var(--coal);
-}
-
 @media (max-width: 920px) {
   .site-header {
     position: absolute;
@@ -372,7 +363,4 @@ h3 {
     width: 100%;
   }
 
-  .site-footer {
-    flex-direction: column;
-  }
 }
