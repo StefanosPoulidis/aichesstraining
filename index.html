@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="AI-enabled chess training study platform with adaptive chess practice, AI-generated tips, quizzes, and progress tracking."
+      content="Public overview of an AI-enabled chess training platform used to study on-demand AI assistance, productive struggle, and long-term learning."
     />
     <title>AI-Enabled Chess Training</title>
     <link rel="icon" href="favicon.ico" />
@@ -20,7 +20,9 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#study">Study</a>
         <a href="#platform">Platform</a>
-        <a href="#participate">Participate</a>
+        <a href="#interventions">Interventions</a>
+        <a href="#findings">Findings</a>
+        <a href="#read-more">Read more</a>
       </nav>
     </header>
 
@@ -29,15 +31,15 @@
         <img src="img/home/chess_1.jpg" alt="" class="hero-image" />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">Chess training research platform</p>
+          <p class="eyebrow">Research platform overview</p>
           <h1>AI-Enabled Chess Training</h1>
           <p class="hero-copy">
-            A study platform for understanding how AI-generated chess tips can support practice,
-            feedback, and skill development.
+            A custom chess-training platform used to study when AI assistance supports learning and
+            when on-demand help weakens the effort that builds skill.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#participate">Participate</a>
-            <a class="button secondary" href="#platform">View platform preview</a>
+            <a class="button primary" href="#platform">View platform screenshots</a>
+            <a class="button secondary" href="#findings">See key findings</a>
           </div>
         </div>
       </section>
@@ -45,84 +47,236 @@
       <section id="study" class="section intro-section">
         <div class="section-inner two-column">
           <div>
-            <p class="eyebrow">The study</p>
-            <h2>Train, play, and learn with adaptive AI assistance.</h2>
+            <p class="eyebrow">The field experiment</p>
+            <h2>A chess-training environment for studying AI help, effort, and lasting skill.</h2>
           </div>
-          <p class="lead">
-            The platform was built for chess learners, coaches, and academies. Players practice
-            against an adaptive chess engine, receive AI-generated tips under different assistance
-            conditions, complete quizzes and tests, and generate progress data for learning
-            analysis.
-          </p>
+          <div class="copy-stack">
+            <p class="lead">
+              The platform was built for a 12-week field experiment with more than 200 chess-club
+              students. Participants trained on the same custom app, which combined adaptive engine
+              games, AI-generated tips, chess quizzes, test games, and progress dashboards.
+            </p>
+            <p>
+              The central design question was simple but consequential: should learners control when
+              they receive AI help, or should the system decide when assistance is useful? The answer
+              matters because the same assistance that improves immediate performance can also
+              replace the productive struggle needed for long-term learning.
+            </p>
+          </div>
+        </div>
+        <div class="section-inner stat-grid" aria-label="Study summary">
+          <div class="stat-item">
+            <strong>12 weeks</strong>
+            <span>Intensive chess training</span>
+          </div>
+          <div class="stat-item">
+            <strong>200+</strong>
+            <span>Chess-club students</span>
+          </div>
+          <div class="stat-item">
+            <strong>2 designs</strong>
+            <span>System-regulated vs. on-demand AI help</span>
+          </div>
+          <div class="stat-item">
+            <strong>30% vs. 64%</strong>
+            <span>Learning gains after training</span>
+          </div>
         </div>
       </section>
 
       <section id="platform" class="section">
-        <div class="section-inner">
-          <p class="eyebrow">Platform preview</p>
-          <h2>What participants see</h2>
-          <div class="preview-grid">
-            <article class="preview-item">
-              <img src="img/home/chess_3.png" alt="Chess board setup screen" />
-              <h3>Adaptive play</h3>
-              <p>Players face a chess engine calibrated to their skill level.</p>
-            </article>
-            <article class="preview-item">
-              <img src="img/home/chess_4.png" alt="Tip board inside the chess platform" />
-              <h3>AI tip board</h3>
-              <p>Selected training conditions provide real-time AI-generated move guidance.</p>
-            </article>
-            <article class="preview-item">
-              <img src="img/home/chess_5.png" alt="Chess quiz interface" />
-              <h3>Quizzes and tests</h3>
-              <p>Participants complete chess questions and structured test games.</p>
-            </article>
-            <article class="preview-item">
-              <img src="img/home/chess_7.png" alt="Coach dashboard showing player progress" />
-              <h3>Coach dashboard</h3>
-              <p>Coaches can review student engagement, outcomes, and progress over time.</p>
-            </article>
-          </div>
+        <div class="section-inner section-heading">
+          <p class="eyebrow">The platform</p>
+          <h2>What participants actually used</h2>
+          <p class="lead">
+            The live research app required authenticated student and coach accounts. This public
+            version preserves the platform context, intervention logic, and screenshots so the study
+            can be shared without exposing the original backend or participant data.
+          </p>
         </div>
-      </section>
 
-      <section class="section band">
-        <div class="section-inner two-column">
-          <img class="wide-image" src="img/home/chess_2.png" alt="Profile and training overview" />
-          <div>
-            <p class="eyebrow">Training flow</p>
-            <h2>Personal profiles, guided practice, and progress tracking.</h2>
+        <div class="section-inner screenshot-feature">
+          <figure>
+            <img
+              src="img/home/chess_4.png"
+              alt="Training game screen with chess board, move history, timer, and AI tip board"
+            />
+            <figcaption>
+              Training games placed the chess board, move history, timer, and tip board in the same
+              workspace so students could practice while the platform recorded assistance and
+              engagement data.
+            </figcaption>
+          </figure>
+          <div class="feature-copy">
+            <p class="eyebrow">Train / play</p>
+            <h3>Adaptive practice with instrumented AI feedback</h3>
             <p>
-              Each participant can have a tailored profile, training condition, and activity
-              history. The platform records games, tips, quiz performance, and engagement measures
-              for later analysis.
+              Students played against a chess engine calibrated to their level. The app identified
+              moments where an optimal move existed, delivered or withheld help depending on the
+              assigned condition, and tracked whether students found the move, followed the tip, or
+              requested additional help.
             </p>
           </div>
         </div>
+
+        <div class="section-inner platform-grid" aria-label="Platform screenshots">
+          <figure class="platform-shot">
+            <img src="img/home/chess_3.png" alt="Game setup screen with player and engine settings" />
+            <figcaption>
+              Players began each training game with personalized settings, including player level,
+              engine level, color, and game type.
+            </figcaption>
+          </figure>
+          <figure class="platform-shot">
+            <img src="img/home/chess_5.png" alt="Chess quiz screen showing multiple board positions" />
+            <figcaption>
+              Quizzes and test tasks measured chess knowledge separately from assisted training
+              performance.
+            </figcaption>
+          </figure>
+          <figure class="platform-shot">
+            <img src="img/home/chess_6.png" alt="Profile page showing quiz results and performance history" />
+            <figcaption>
+              Student profiles tracked quiz scores, training history, and progress over time.
+            </figcaption>
+          </figure>
+          <figure class="platform-shot">
+            <img src="img/home/chess_7.png" alt="Coach dashboard showing student activity and game statistics" />
+            <figcaption>
+              Coach dashboards made engagement and learning activity visible across students.
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section id="participate" class="section participate">
-        <div class="section-inner">
-          <p class="eyebrow">Participate</p>
-          <h2>Register interest in the study</h2>
+      <section id="interventions" class="section band">
+        <div class="section-inner section-heading">
+          <p class="eyebrow">AI assistance design</p>
+          <h2>Same platform, different control over help</h2>
           <p class="lead">
-            Use the relevant form below if you are a coach, academy manager, parent, or chess
-            player interested in participating.
+            Students were randomly assigned to different assistance designs. In the system-regulated
+            condition, the platform automatically provided AI tips at key moments. In the
+            self-regulated condition, students received the same automatic tips but could also click
+            for additional help whenever they wanted.
           </p>
-          <div class="participation-layout">
-            <img src="img/home/qr_code.png" alt="QR code for study participation forms" />
-            <div class="link-stack">
-              <a class="button primary" href="https://bit.ly/chesstraining_academy">
-                Coaches and academies
-              </a>
-              <a class="button secondary dark" href="https://bit.ly/chesstraining_participate">
-                Players and parents
-              </a>
-            </div>
+        </div>
+
+        <div class="section-inner intervention-grid">
+          <article>
+            <span class="tag">System-regulated</span>
+            <h3>Help at selected moments</h3>
+            <p>
+              The platform determined when a tip would be shown. This design preserved moments of
+              independent search while still giving students structured guidance during training.
+            </p>
+          </article>
+          <article>
+            <span class="tag">Self-regulated</span>
+            <h3>On-demand help button</h3>
+            <p>
+              Students could request assistance at any point. That extra control improved some
+              short-run training outcomes, but it also made it easier to bypass difficult thinking.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-inner tip-grid" aria-label="AI tip examples">
+          <figure>
+            <img
+              src="img/minimal_tips.png"
+              alt="Instructional screenshot explaining a minimal tip that flags an optimal move without revealing it"
+            />
+            <figcaption>
+              Minimal tips acted like attention signals: they told students that an important move
+              existed without giving away the move.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="img/full_tips.png"
+              alt="Instructional screenshot explaining a full tip that reveals the best chess move"
+            />
+            <figcaption>
+              Full tips provided solution-level guidance by revealing the recommended move.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="findings" class="section findings-section">
+        <div class="section-inner section-heading">
+          <p class="eyebrow">Key findings</p>
+          <h2>More control over AI help did not produce more learning</h2>
+          <p class="lead">
+            Both groups improved, but students with on-demand access to AI help learned less than
+            half as much as students whose assistance was system-regulated.
+          </p>
+        </div>
+
+        <div class="section-inner findings-grid">
+          <article class="finding-card primary-finding">
+            <span class="finding-number">64%</span>
+            <h3>System-regulated learning gain</h3>
+            <p>
+              Students whose help was governed by the platform made substantially larger gains after
+              the 12-week training period.
+            </p>
+          </article>
+          <article class="finding-card contrast-finding">
+            <span class="finding-number">30%</span>
+            <h3>On-demand learning gain</h3>
+            <p>
+              Students who could request extra AI help whenever they wanted improved by less than
+              half as much, despite having more access to assistance.
+            </p>
+          </article>
+          <article class="finding-card">
+            <h3>Productive struggle was displaced</h3>
+            <p>
+              The learning loss was concentrated when students requested help on tasks inside their
+              Zone of Proximal Development: difficult enough to require effort, but still achievable
+              with the right support.
+            </p>
+          </article>
+          <article class="finding-card">
+            <h3>Engagement fell as reliance rose</h3>
+            <p>
+              Students with on-demand help completed fewer training games, reported lower
+              accomplishment, and increased their AI requests over time even while recognizing the
+              risk of over-reliance.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-inner design-principle">
+          <p class="eyebrow">Design implication</p>
+          <p>
+            AI training systems should not simply maximize access to answers. They should preserve
+            productive struggle when learners are ready to practice, while providing stronger support
+            when tasks fall outside the learner's current reach.
+          </p>
+        </div>
+      </section>
+
+      <section id="read-more" class="section read-more-section">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Read more</p>
+            <h2>Paper and accessible summary</h2>
+          </div>
+          <div class="link-list">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5604932">
+              Working paper: Self-Regulated AI Use Hinders Long-Term Learning
+            </a>
+            <a href="https://knowledge.insead.edu/responsibility/how-demand-ai-assistance-undermines-learning">
+              INSEAD Knowledge: How On-Demand AI Assistance Undermines Learning
+            </a>
+            <a href="https://stefanospoulidis.github.io/#ai-field-deployments">
+              Related field deployment on Stefanos Poulidis's website
+            </a>
           </div>
         </div>
       </section>
     </main>
-
   </body>
 </html>
