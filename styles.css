@@ -393,11 +393,71 @@ figure {
   margin-bottom: 28px;
 }
 
+.intervention-grid--compare {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  max-width: 1040px;
+}
+
 .intervention-grid article {
   padding: 26px;
   border: 1px solid rgba(17, 24, 39, 0.12);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.74);
+}
+
+.intervention-grid--compare article {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.intervention-grid--compare h3 {
+  color: var(--forest-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height: 1.08;
+}
+
+.intervention-grid--compare .condition-tools {
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.intervention-grid--compare .condition-agency {
+  margin-top: auto;
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.14;
+}
+
+.intervention-grid--compare .condition-agency span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.82em;
+}
+
+.intervention-versus {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--forest-dark);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .tag {
@@ -473,21 +533,6 @@ figure {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.finding-card--wide {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
-  gap: 22px;
-  min-height: auto;
-  align-items: center;
-}
-
-.finding-card--wide p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 1.08rem;
-}
-
 .finding-number {
   display: block;
   margin-bottom: 18px;
@@ -503,21 +548,6 @@ figure {
 
 .contrast-finding {
   background: rgba(159, 77, 98, 0.3);
-}
-
-.design-principle {
-  margin-top: 28px;
-  padding: clamp(24px, 4vw, 34px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.09);
-}
-
-.design-principle p:last-child {
-  max-width: 980px;
-  color: #ffffff;
-  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
-  line-height: 1.35;
 }
 
 .read-more-section {
@@ -571,10 +601,6 @@ figure {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .finding-card--wide {
-    grid-column: 1 / -1;
-  }
-
   section[id] {
     scroll-margin-top: 140px;
   }
@@ -590,9 +616,15 @@ figure {
   .platform-grid,
   .intervention-grid,
   .tip-grid,
-  .tip-grid--three,
-  .finding-card--wide {
+  .tip-grid--three {
     grid-template-columns: 1fr;
+  }
+
+  .intervention-versus {
+    width: 48px;
+    height: 48px;
+    margin: 2px auto;
+    font-size: 1rem;
   }
 
   .tip-grid--move-reveal {
