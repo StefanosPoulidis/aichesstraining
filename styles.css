@@ -335,6 +335,30 @@ figure {
   font-size: 1.05rem;
 }
 
+.platform-paper {
+  margin-top: 42px;
+}
+
+.section-subheading {
+  max-width: 860px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.section-subheading h3 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 2.5vw, 2.15rem);
+  line-height: 1.16;
+}
+
+.section-subheading p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .platform-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -346,6 +370,16 @@ figure {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top center;
+}
+
+.paper-grid {
+  margin-top: 22px;
+}
+
+.paper-shot img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  padding: 8px;
 }
 
 .band {
@@ -385,12 +419,18 @@ figure {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  margin-top: 20px;
+  margin-bottom: 34px;
 }
 
-.tip-grid img {
-  aspect-ratio: 16 / 9;
+.tip-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tip-shot img {
+  aspect-ratio: auto;
   object-fit: contain;
-  padding: 10px;
+  padding: 0;
 }
 
 .findings-section {
@@ -518,7 +558,8 @@ figure {
   .screenshot-feature,
   .platform-grid,
   .intervention-grid,
-  .tip-grid {
+  .tip-grid,
+  .tip-grid--three {
     grid-template-columns: 1fr;
   }
 

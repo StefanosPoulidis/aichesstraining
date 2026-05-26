@@ -90,8 +90,8 @@
           <h2>What participants actually used</h2>
           <p class="lead">
             The live research app required authenticated student and coach accounts. This public
-            version preserves the platform context, intervention logic, and screenshots so the study
-            can be shared without exposing the original backend or participant data.
+            version preserves the platform context, intervention logic, and paper screenshots so the
+            study can be shared without exposing the original backend or participant data.
           </p>
         </div>
 
@@ -119,33 +119,58 @@
           </div>
         </div>
 
-        <div class="section-inner platform-grid" aria-label="Platform screenshots">
-          <figure class="platform-shot">
-            <img src="img/home/chess_3.png" alt="Game setup screen with player and engine settings" />
-            <figcaption>
-              Players began each training game with personalized settings, including player level,
-              engine level, color, and game type.
-            </figcaption>
-          </figure>
-          <figure class="platform-shot">
-            <img src="img/home/chess_5.png" alt="Chess quiz screen showing multiple board positions" />
-            <figcaption>
-              Quizzes and test tasks measured chess knowledge separately from assisted training
-              performance.
-            </figcaption>
-          </figure>
-          <figure class="platform-shot">
-            <img src="img/home/chess_6.png" alt="Profile page showing quiz results and performance history" />
-            <figcaption>
-              Student profiles tracked quiz scores, training history, and progress over time.
-            </figcaption>
-          </figure>
-          <figure class="platform-shot">
-            <img src="img/home/chess_7.png" alt="Coach dashboard showing student activity and game statistics" />
-            <figcaption>
-              Coach dashboards made engagement and learning activity visible across students.
-            </figcaption>
-          </figure>
+        <div class="section-inner platform-paper">
+          <div class="section-subheading">
+            <p class="eyebrow">Study interfaces</p>
+            <h3>Progress, competition, quizzes, and feedback</h3>
+            <p>
+              Beyond training games, the platform gave students a profile page, leaderboard, chess
+              quizzes, and post-quiz feedback. These paper figures show how learning activity,
+              rankings, and knowledge checks were presented during the field deployment.
+            </p>
+          </div>
+          <div class="platform-grid paper-grid" aria-label="Paper screenshots of platform interfaces">
+            <figure class="platform-shot paper-shot">
+              <img
+                src="img/paper/profile-interface.png"
+                alt="Paper screenshot of the student profile interface with quiz scores and training history"
+              />
+              <figcaption>
+                Profile pages summarized completed games, quiz history, tip use, and move quality
+                over time.
+              </figcaption>
+            </figure>
+            <figure class="platform-shot paper-shot">
+              <img
+                src="img/paper/leaderboard-interface.png"
+                alt="Paper screenshot of the leaderboard interface"
+              />
+              <figcaption>
+                The leaderboard made progress visible by ranking students on engagement and
+                performance metrics.
+              </figcaption>
+            </figure>
+            <figure class="platform-shot paper-shot">
+              <img
+                src="img/paper/quiz-interface.png"
+                alt="Paper screenshot of a chess quiz with multiple board positions"
+              />
+              <figcaption>
+                Quizzes asked students to compare positions and answer chess-knowledge questions
+                outside assisted game play.
+              </figcaption>
+            </figure>
+            <figure class="platform-shot paper-shot">
+              <img
+                src="img/paper/quiz-feedback.png"
+                alt="Paper screenshot of post-quiz feedback with score and explanation"
+              />
+              <figcaption>
+                Post-quiz feedback gave students their score, the correct answer, and an explanation
+                for the quiz position.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -155,49 +180,101 @@
           <h2>Same platform, different control over help</h2>
           <p class="lead">
             Students were randomly assigned to different assistance designs. In the system-regulated
-            condition, the platform automatically provided AI tips at key moments. In the
-            self-regulated condition, students received the same automatic tips but could also click
-            for additional help whenever they wanted.
+            condition, the platform automatically provided alert tips at algorithmically identified
+            critical moments. In the self-regulated condition, students received the same automatic
+            alerts and could also request move-reveal tips whenever they wanted.
           </p>
         </div>
 
         <div class="section-inner intervention-grid">
           <article>
             <span class="tag">System-regulated</span>
-            <h3>Help at selected moments</h3>
+            <h3>Automated alert tips</h3>
             <p>
-              The platform determined when a tip would be shown. This design preserved moments of
-              independent search while still giving students structured guidance during training.
+              The platform decided when help appeared. Alert tips flagged that an optimal move was
+              available without revealing the move before the student acted, preserving a moment of
+              independent search.
             </p>
           </article>
           <article>
             <span class="tag">Self-regulated</span>
-            <h3>On-demand help button</h3>
+            <h3>On-demand move-reveal tips</h3>
             <p>
-              Students could request assistance at any point. That extra control improved some
-              short-run training outcomes, but it also made it easier to bypass difficult thinking.
+              Students could also click the tip button during training. A move-reveal tip disclosed
+              the best move, explained the idea, and suggested a continuation.
             </p>
           </article>
         </div>
 
-        <div class="section-inner tip-grid" aria-label="AI tip examples">
-          <figure>
+        <div class="section-inner section-subheading">
+          <p class="eyebrow">Alert tips and feedback</p>
+          <h3>Guidance before and after the student's move</h3>
+          <p>
+            Alert tips signaled that the position contained an important opportunity. After the
+            student moved, feedback either confirmed that the optimal move was found or revealed the
+            missed optimal move with an explanation.
+          </p>
+        </div>
+
+        <div class="section-inner tip-grid tip-grid--three" aria-label="Alert tip and feedback examples from the paper">
+          <figure class="tip-shot">
             <img
-              src="img/minimal_tips.png"
-              alt="Instructional screenshot explaining a minimal tip that flags an optimal move without revealing it"
+              src="img/paper/alert-tip.png"
+              alt="Paper screenshot of an alert tip saying there is an optimal move here"
             />
             <figcaption>
-              Minimal tips acted like attention signals: they told students that an important move
-              existed without giving away the move.
+              Alert tips pointed students to a critical position without giving away the solution.
             </figcaption>
           </figure>
-          <figure>
+          <figure class="tip-shot">
             <img
-              src="img/full_tips.png"
-              alt="Instructional screenshot explaining a full tip that reveals the best chess move"
+              src="img/paper/alert-feedback-correct.png"
+              alt="Paper screenshot of feedback confirming the student found the optimal move"
             />
             <figcaption>
-              Full tips provided solution-level guidance by revealing the recommended move.
+              Correct-move feedback reinforced the decision when students found the optimal move.
+            </figcaption>
+          </figure>
+          <figure class="tip-shot">
+            <img
+              src="img/paper/alert-feedback-missed.png"
+              alt="Paper screenshot of feedback revealing a missed optimal move"
+            />
+            <figcaption>
+              Missed-move feedback revealed the optimal move and explained why it mattered.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="section-inner section-subheading">
+          <p class="eyebrow">Move-reveal tips</p>
+          <h3>The extra on-demand help in the self-regulated condition</h3>
+          <p>
+            In the self-regulated condition, students kept the automated alert tips but also had a
+            button that could reveal the best move on demand. This added control made assistance
+            easier to access, but also made it easier to skip productive search.
+          </p>
+        </div>
+
+        <div class="section-inner tip-grid" aria-label="Move-reveal and self-regulated alert examples from the paper">
+          <figure class="tip-shot">
+            <img
+              src="img/paper/move-reveal-tip.png"
+              alt="Paper screenshot of an on-demand move-reveal tip showing the best move and explanation"
+            />
+            <figcaption>
+              Move-reveal tips disclosed the recommended move, the idea behind it, and a suggested
+              continuation.
+            </figcaption>
+          </figure>
+          <figure class="tip-shot">
+            <img
+              src="img/paper/self-regulated-alert-tip.png"
+              alt="Paper screenshot of the self-regulated interface with automatic alert tip and tip button"
+            />
+            <figcaption>
+              Self-regulated students saw automatic alerts and could still request additional
+              solution-level help.
             </figcaption>
           </figure>
         </div>
