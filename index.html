@@ -57,10 +57,11 @@
               games, AI-generated tips, chess quizzes, test games, and progress dashboards.
             </p>
             <p>
-              The central design question was simple but consequential: should learners control when
-              they receive AI help, or should the system decide when assistance is useful? The answer
-              matters because the same assistance that improves immediate performance can also
-              replace the productive struggle needed for long-term learning.
+              The central experimental question was simple but consequential: what happens when
+              learners can request solution-revealing AI help on demand, in addition to the same
+              automated alert tips everyone receives? The answer matters because assistance that
+              improves immediate performance can also replace the productive struggle needed for
+              long-term learning.
             </p>
           </div>
         </div>
@@ -74,8 +75,8 @@
             <span>Chess-club students</span>
           </div>
           <div class="stat-item">
-            <strong>2 designs</strong>
-            <span>System-regulated vs. on-demand AI help</span>
+            <strong>2 conditions</strong>
+            <span>Same alerts; optional move-reveal button</span>
           </div>
           <div class="stat-item">
             <strong>30% vs. 64%</strong>
@@ -112,9 +113,9 @@
             <h3>Adaptive practice with instrumented AI feedback</h3>
             <p>
               Students played against a chess engine calibrated to their level. The app identified
-              moments where an optimal move existed, delivered or withheld help depending on the
-              assigned condition, and tracked whether students found the move, followed the tip, or
-              requested additional help.
+              critical positions where an optimal move existed, delivered automated alert tips in
+              both conditions, and tracked whether students in the self-regulated condition requested
+              additional move-reveal help.
             </p>
           </div>
         </div>
@@ -176,32 +177,41 @@
 
       <section id="interventions" class="section band">
         <div class="section-inner section-heading">
-          <p class="eyebrow">AI assistance design</p>
-          <h2>Same platform, different control over help</h2>
+          <p class="eyebrow">Experimental conditions</p>
+          <h2>Same automated alert tips, one additional button</h2>
           <p class="lead">
-            Students were randomly assigned to different assistance designs. In the system-regulated
-            condition, the platform automatically provided alert tips at algorithmically identified
-            critical moments. In the self-regulated condition, students received the same automatic
-            alerts and could also request move-reveal tips whenever they wanted.
+            Students were randomly assigned to two conditions that used the same platform, the same
+            engine calibration, the same incentives, and the same automated alert tips. The only
+            difference was that students in the self-regulated condition also had a button that could
+            reveal the best move on demand.
           </p>
         </div>
 
         <div class="section-inner intervention-grid">
           <article>
-            <span class="tag">System-regulated</span>
-            <h3>Automated alert tips</h3>
+            <span class="tag">Both conditions</span>
+            <h3>Automated alert tips and feedback</h3>
             <p>
-              The platform decided when help appeared. Alert tips flagged that an optimal move was
-              available without revealing the move before the student acted, preserving a moment of
-              independent search.
+              All students received alert tips at algorithmically identified critical positions. The
+              alert signaled that an optimal move existed; after the move, the platform either
+              confirmed the correct choice or explained the missed optimal move.
+            </p>
+          </article>
+          <article>
+            <span class="tag">System-regulated</span>
+            <h3>No on-demand button</h3>
+            <p>
+              Students received the shared automated alert tips, but they could not manually request
+              extra help. The system controlled when assistance appeared during training.
             </p>
           </article>
           <article>
             <span class="tag">Self-regulated</span>
-            <h3>On-demand move-reveal tips</h3>
+            <h3>Same alerts plus move-reveal button</h3>
             <p>
-              Students could also click the tip button during training. A move-reveal tip disclosed
-              the best move, explained the idea, and suggested a continuation.
+              Students received the same automated alerts and could also click the tip button during
+              their turn. A move-reveal tip disclosed the best move, explained the idea, and suggested
+              a continuation.
             </p>
           </article>
         </div>
@@ -210,9 +220,10 @@
           <p class="eyebrow">Alert tips and feedback</p>
           <h3>Guidance before and after the student's move</h3>
           <p>
-            Alert tips signaled that the position contained an important opportunity. After the
-            student moved, feedback either confirmed that the optimal move was found or revealed the
-            missed optimal move with an explanation.
+            These automated alert tips were present in both experimental conditions. They signaled
+            that the position contained an important opportunity. After the student moved, feedback
+            either confirmed that the optimal move was found or revealed the missed optimal move
+            with an explanation.
           </p>
         </div>
 
@@ -250,9 +261,10 @@
           <p class="eyebrow">Move-reveal tips</p>
           <h3>The extra on-demand help in the self-regulated condition</h3>
           <p>
-            In the self-regulated condition, students kept the automated alert tips but also had a
-            button that could reveal the best move on demand. This added control made assistance
-            easier to access, but also made it easier to skip productive search.
+            This was the only intervention difference. Self-regulated students kept the same
+            automated alert tips and feedback, but also had a button that could reveal the best move
+            on demand. This added control made assistance easier to access, but also made it easier
+            to skip productive search.
           </p>
         </div>
 
@@ -334,7 +346,7 @@
         </div>
 
         <div class="section-inner design-principle">
-          <p class="eyebrow">Design implication</p>
+          <p class="eyebrow">Training implication</p>
           <p>
             AI training systems should not simply maximize access to answers. They should preserve
             productive struggle when learners are ready to practice, while providing stronger support
